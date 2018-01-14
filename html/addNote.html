@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="../css/iconfont.css" />
+	<link rel="stylesheet" href="../css/common.css"/>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<title>添加笔记的页面</title>
+	<style type="text/css">
+		.addInp{
+	    margin-top:0px;
+	    margin-bottom: 0px!important;
+	    border:0px!important;
+    }
+	</style>
+</head>
+<body>
+	<div id="app">
+		<header class="mui-bar mui-bar-nav header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">新建</h1>
+			<a class="mui-tab-item addSave">
+        <span class="mui-icon mui-pull-right iconfont2 icon-baocun2"></span>
+      </a>
+	  </header>
+	  <div class="mui-content">	
+		  <form class="form">
+				<input id="title" type="text" class="form-control addInp" placeholder="请点击输入标题"/>		
+					<textarea id="content" class="form-control" rows="30"></textarea>
+		  </form>
+	  </div>
+  </div>
+	<script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		mui.init();
+		mui.plusReady(function() {
+			var w = plus.webview.currentWebview();
+		});
+	</script>
+</body>
+</html>

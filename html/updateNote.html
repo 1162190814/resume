@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<link rel="stylesheet" href="../css/mui.min.css">
+	<link rel="stylesheet" href="../css/iconfont.css" />
+	<link rel="stylesheet" href="../css/common.css"/>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../js/mui.min.js"></script>
+	<style type="text/css">
+		.title{
+			margin-top:1px;
+			margin-bottom: 0px!important;
+	    border:0px!important;
+		}
+	</style>
+	<script type="text/javascript">
+		mui.plusReady(function() {onFetchNote()});
+	</script>
+  <title>修改页面</title>
+</head>
+<body>
+	<div id="app">
+		<header class="mui-bar mui-bar-nav header">
+		  <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		  <h1 class="mui-title">编辑</h1>
+		  <a class="mui-tab-item update">
+        <span class="mui-icon mui-pull-right iconfont2 icon-baocun2"></span>
+      </a>
+		  <a class="mui-tab-item" href="#delete">
+        <span class="mui-icon mui-pull-right iconfont2 icon-shanchu1">&nbsp;&nbsp;</span>
+      </a>
+	  </header>
+    <div id="delete" class="mui-popover mui-popover-action mui-popover-bottom">
+      <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+          <a href="#" @click="onDelClick($('#objectId').val())" style="color: #FF3B30;">确认删除</a>
+        </li>
+      </ul>
+      <ul class="mui-table-view">
+        <li class="mui-table-view-cell">
+          <a href="#delete"><b>取消</b></a>
+        </li>
+      </ul>
+    </div>
+	  <div class="mui-content">
+		  <form class="form">
+			  <div style="display: none;">				
+				  <input id="objectId" type="text" class="form-control"></input>
+			  </div>
+				  <input id="title" type="text" class="form-control title" />
+				  <textarea id="content" class="form-control" rows="30"></textarea>
+		  </form>
+	  </div>
+	</div>	
+</body>
+    <script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/base.js" type="text/javascript" charset="utf-8"></script>
+</html>

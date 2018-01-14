@@ -1,0 +1,16 @@
+{
+  "index.html": {
+    "resources": [
+      "html/noteList.html"
+    ],
+    "refer": [
+      "html/noteList.html"
+    ]
+  },
+  "html/noteList.html": {
+    "refer": [
+      "html/updateNote.html",
+      "html/addNote.html"
+    ]
+  }
+}

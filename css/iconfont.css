@@ -1,0 +1,45 @@
+
+@font-face {font-family: "iconfont2";
+  src: url('../fonts/iconfont2.ttf?t=1515919896248') format('truetype')
+}
+
+.iconfont2 {
+  font-family:"iconfont2" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-73:before { content: "\e666"; }
+
+.icon-baocun1:before { content: "\e616"; }
+
+.icon-baocun2:before { content: "\e645"; }
+
+.icon-baocun3:before { content: "\e649"; }
+
+.icon-shanchu:before { content: "\e609"; }
+
+.icon-shanchu1:before { content: "\e633"; }
+
+.icon-baocun4:before { content: "\e626"; }
+
+.icon-baocun5:before { content: "\e702"; }
+
+.icon-shanchu2:before { content: "\e642"; }
+
+.icon-baocun6:before { content: "\e6b6"; }
+
+.icon-shanchu3:before { content: "\e639"; }
+
+.icon-shanchu4:before { content: "\e60d"; }
+
+.icon-baocun7:before { content: "\e600"; }
+
+.icon-icon-:before { content: "\e6dd"; }
+
+.icon-shanchu5:before { content: "\e62e"; }
+
+.icon-baocun:before { content: "\e6c6"; }
+
