@@ -1,6 +1,8 @@
 //var baseUrl = 'http://333ff6e9704e44d8b5d465e4819a3f6a-cn-beijing.alicloudapi.com/note/';
 //var baseUrl = 'http://cloud.bmob.cn/ead27e69d1ab3fe4/';
-var baseUrl = 'http://cloud.bmob.cn/c217e0595a075296/';
+//var baseUrl = 'http://cloud.bmob.cn/c217e0595a075296/';
+var baseUrl = 'http://cloud.bmob.cn/b82559a27442a320/';
+
 
 
 var app = new Vue({
