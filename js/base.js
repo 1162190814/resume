@@ -75,7 +75,7 @@ function onFetchNote() {
 }
 
 //上拉加载笔记列表
-function onQueryClick() {
+function onQueryClick(callback) {
 	//分页加载逻辑，每次下拉加载五条记录
 	var filter = document.getElementById("filter").value;
 	console.log("filter = " + filter);
@@ -87,6 +87,7 @@ function onQueryClick() {
 	};
 	invokeJsonp('queryNote', params, function(data) {
 		var notes = data;
+		callback(notes);
 		app.noteList = app.noteList.concat(notes.results);
 	}, function() {
 		mui('#pullrefresh').pullRefresh().endPulldownToRefresh();

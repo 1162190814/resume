@@ -87,7 +87,7 @@
 				}
 			});
 			mui.plusReady(function() {
-				onQueryClick();
+				onFirst();
 			});
 			/**
 			 * 下拉刷新具体业务实现
@@ -95,6 +95,7 @@
 			function pulldownRefresh() {
 				onFirst();
 				mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+				mui('#pullrefresh').pullRefresh().refresh(true);
 				mui.toast('下拉刷新成功');
 			}
 			var count = 0;
@@ -102,10 +103,11 @@
 			 * 上拉加载具体业务实现
 			 */
 			function pullupRefresh() {
-				mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
-				onQueryClick();
-			}
+				onQueryClick(function(notes) {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((notes.results.length == 0)); //参数为true代表没有更多数据了。	
+				});
+			}			
 		</script>
 	</body>
-
+	
 </html>
